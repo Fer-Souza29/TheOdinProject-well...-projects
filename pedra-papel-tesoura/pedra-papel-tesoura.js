@@ -11,6 +11,8 @@ function computerPlay() {
 let playerScore = 0
 let computerScore = 0
 
+/* A função playround executa toda a lógica de uma rodada do jogo, recebendo as escolhas do jogador e do computador, e as comparando para 
+determinar o vendedor */
 
 function playRound() {
 
@@ -20,18 +22,20 @@ function playRound() {
     console.log(playerSelection, computerSelection);
 
     if (playerSelection === computerSelection) {
-        return (console.log('Empate'));
+        return (console.log('Rodada empatou'));
     } if ((playerSelection === "pedra" && computerSelection === "tesoura") ||
         (playerSelection === "papel" && computerSelection === "pedra") ||
         (playerSelection === "tesoura" && computerSelection === "papel")) {
-        console.log("Voce Ganhou");
+        console.log("Parabéns, você ganhou essa rodada");
         playerScore++;
     } else {
-        console.log("Computador ganhou");
+        console.log("O computador ganhou essa rodada");
         computerScore++;
     };
 
 };
+
+// Função que simula um jogo com 5 rodadas,  ganha quem chegar a 3 pontos.
 
 function fiveRoundgame() {
     for (var i= 0; i <=4; i++) playRound(i);
@@ -39,9 +43,9 @@ function fiveRoundgame() {
     console.log(playerScore, computerScore);
     
     if (playerScore >= 3) {
-        console.log("vc ganhou")
+        console.log("Você ganhou o jogo")
     } else if (computerScore >= 3) {
-        console.log("vc perdeu")
+        console.log("Computadou ganhou o jogo")
     } else (console.log("ninguém chegou a 3 pontos, joguem novamente"))
     
 }
