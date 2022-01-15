@@ -8,7 +8,7 @@ sabe como é né, outros projetos na frente.
 Esse desafio foi proposto na seção Foundations do TOP:
 https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/rock-paper-scissors
 
-===============================================================================================
+============================================================================================
 
 A simple Rock Paper Scissors game with 5 rounds.
 details of logic and operation in the code comments.
